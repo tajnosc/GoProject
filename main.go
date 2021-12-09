@@ -5,9 +5,9 @@ import (
 	"github.com/tajnosc/GoProject/api"
 )
 
-const queriesPATH = "queries.json"
-const answersPATH = "answers.json"
-const ranksPATH = "ranks.txt"
+const queriesPATH = "assets/queries.json"
+const answersPATH = "assets/answers.json"
+const ranksPATH = "assets/ranks.txt"
 
 var questions = api_types.Questions{}
 var answers = api_types.Answers{}
