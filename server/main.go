@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/tajnosc/GoProject/api"
+	"github.com/tajnosc/GoProject/server/api"
 )
 
 const queriesPATH = "assets/queries.json"
