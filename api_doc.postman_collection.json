@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "748efe12-9264-445c-b6fb-e39cc988d588",
+		"name": "GoProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getQuestions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getQuestions",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getQuestions"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getQuestions",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/getQuestions",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"getQuestions"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Dec 2021 17:57:57 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "351"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"1\": {\n        \"query\": \"1\",\n        \"variants\": [\n            \"A\",\n            \"B\"\n        ]\n    },\n    \"2\": {\n        \"query\": \"2\",\n        \"variants\": [\n            \"A\",\n            \"B\",\n            \"C\"\n        ]\n    },\n    \"3\": {\n        \"query\": \"3\",\n        \"variants\": [\n            \"A\",\n            \"B\",\n            \"C\"\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "submit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"1\": \"A\",\n    \"2\": \"A\",\n    \"3\": \"B\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/submit",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"submit"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "submit",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"1\": \"A\",\n    \"2\": \"D\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/submit",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"submit"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Dec 2021 17:58:20 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "40"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"correct\": 1,\n    \"incorrect\": 0\n}"
+				},
+				{
+					"name": "submit",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"1\": \"A\",\n    \"2\": \"A\",\n    \"3\": \"B\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/submit",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"submit"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 09 Dec 2021 22:22:20 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "76"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"correct\": 1,\n    \"incorrect\": 2,\n    \"position\": 27.586206896551722\n}"
+				}
+			]
+		}
+	]
+}
