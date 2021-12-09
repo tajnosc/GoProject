@@ -8,3 +8,9 @@ type Question struct {
 type Questions = map[string]Question
 
 type Answers = map[string]string
+
+type SubmitResponse struct {
+	CorrectAnswers   int     `json:"correct"`
+	IncorrectAnswers int     `json:"incorrect"`
+	Position         float64 `json:"position"`
+}
