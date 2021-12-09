@@ -89,7 +89,7 @@ func startQuiz(questions api_types.Questions) api_types.Answers {
 			Items: optionsValues,
 		}
 
-		index, result, _ := prompt.Run()
+		index, _, _ := prompt.Run()
 		answers[number] = optionsKeys[index]
 	}
 
