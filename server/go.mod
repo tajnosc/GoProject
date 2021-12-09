@@ -1,4 +1,4 @@
-module github.com/tajnosc/GoProject
+module github.com/tajnosc/GoProject/server
 
 go 1.13
 

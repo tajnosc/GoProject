@@ -10,7 +10,7 @@ import (
 )
 
 func readJsonFromFile(filePATH string, outStruct interface{}) {
-	jsonFile, err := os.Open(queriesPATH)
+	jsonFile, err := os.Open(filePATH)
 	if err != nil {
 		fmt.Println(err)
 	}

@@ -1,0 +1,10 @@
+    {
+    	"1": {
+        "query": "How much is the fish",
+        "variants": {
+		    "A": "1 euro",
+		    "B": "2 euro"
+        	}
+        }
+    }
+
